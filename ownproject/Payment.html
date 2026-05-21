@@ -1,0 +1,18 @@
+{{ block title }}
+Random Payment Selection
+{{ endblock }}
+
+{{ block content }}
+
+<p>One task will now be randomly selected for payment.</p>
+
+<p>Your task payoffs are:</p>
+<ul>
+    <li>Altruism: <strong>{{ altruism_payoff }}</strong></li>
+    <li>Trust Game: <strong>{{ trust_payoff }}</strong></li>
+    <li>Truth-telling: <strong>{{ truth_payoff }}</strong></li>
+</ul>
+
+{{ next_button }}
+
+{{ endblock }}

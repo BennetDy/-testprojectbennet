@@ -1,0 +1,37 @@
+{{ block title }}Your Choice{{ endblock }}
+{{ block content }}
+    <p>
+        You are Participant B.
+        Participant A sent you an amount and and you received the tripled amount..
+        How much will you send to participant A, depending on the amount they sent?
+    </p>
+<p>If A sent 0, you received 0. How much will you send back?</p>
+{{ formfield 'sent_back_amount_000' }}
+
+<p>If A sent 50, you received 150. How much will you send back?</p>
+{{ formfield 'sent_back_amount_050' }}
+
+<p>If A sent 100, you received 300. How much will you send back?</p>
+{{ formfield 'sent_back_amount_100' }}
+
+<p>If A sent 150, you received 450. How much will you send back?</p>
+{{ formfield 'sent_back_amount_150' }}
+<p> if he sent 200, you received 600, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_200' }}
+ <p> if he sent 250, you received 750, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_250' }}
+<p> if he sent 300, you received 900, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_300' }}
+<p> if he sent 350, you received 1050, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_350' }}
+<p> if he sent 400, you received 1200, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_400' }}
+<p> if he sent 450, you received 1350, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_450' }}
+<p> if he sent 500, you received 1500, how much will you send back?</p>
+    {{ formfield 'sent_back_amount_500' }}
+
+    <p>{{ next_button }}</p>
+    {{ include_sibling 'instructions.html' }}
+
+{{ endblock }}

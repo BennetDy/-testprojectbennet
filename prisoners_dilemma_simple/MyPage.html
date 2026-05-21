@@ -1,0 +1,25 @@
+{{ block title }}
+{{ endblock }}
+{{ block content }}
+Below ypu find the payoff Matrix of a prisoners Dilemma Game.
+<table style="width:100%">
+  <tr>
+    <td>You/Other Player</td>
+    <th>Cooperate</th>
+    <th>Defect</th>
+  </tr>
+  <tr>
+    <th>Cooperate</th>
+    <td>{{ C.payoff_both_cooperate }}, {{ C.payoff_both_cooperate }}</td>
+    <td>{{ C.payoff_coopered_defect_low }}, {{ C.payoff_coopered_defect_high }}</td>
+  </tr>
+  <tr>
+    <th>Defect</th>
+    <td>{{ C.payoff_coopered_defect_high }}, {{ C.payoff_coopered_defect_low }}</td>
+    <td>{{ C.payoff_both_defect }}, {{ C.payoff_both_defect }}</td>
+  </tr>
+</table>
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

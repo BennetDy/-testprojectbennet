@@ -1,0 +1,20 @@
+{{ block title }}
+Trust Game
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+You receive <strong>{{ C.TRUST_ENDOWMENT }}</strong> points.
+How many points do you want to send to the other participant?
+</p>
+
+<p>
+The amount sent will be multiplied by <strong>{{ C.TRUST_MULTIPLIER }}</strong>.
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

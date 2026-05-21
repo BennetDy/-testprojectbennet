@@ -1,0 +1,31 @@
+{{ block title }}
+Final Results
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+The randomly selected task is:
+<strong>{{ selected_task }}</strong>
+</p>
+
+<p>
+Your payoff from the selected task is:
+<strong>{{ selected_task_payoff }}</strong>
+</p>
+
+<p>Overview:</p>
+<ul>
+    <li>Altruism payoff: <strong>{{ altruism_payoff }}</strong></li>
+    <li>Trust Game payoff: <strong>{{ trust_payoff }}</strong></li>
+    <li>Truth-telling payoff: <strong>{{ truth_payoff }}</strong></li>
+</ul>
+
+<p>
+Your final payoff in this app is:
+<strong>{{ player.payoff }}</strong>
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

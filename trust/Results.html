@@ -1,0 +1,251 @@
+{{ block title }}Results{{ endblock }}
+{{ block content }}
+
+    {{ if group.sent_amount == 0 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_000 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_000 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_000 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_000 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_000 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_000 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 50 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_050 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_050 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_050 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_050 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_050 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_050 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 100 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_100 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_100 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_100 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_100 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_100 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_100 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 150 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_150 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_150 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_150 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_150 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_150 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_150 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 200 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_200 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_200 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_200 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_200 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_200 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_200 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 250 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_250 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_250 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_250 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_250 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_250 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_250 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 300 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_300 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_300 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_300 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_300 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_300 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_300 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 350 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_350 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_350 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_350 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_350 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_350 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_350 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 400 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_400 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_400 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_400 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_400 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_400 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_400 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 450 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_450 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_450 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_450 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_450 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_450 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_450 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+
+    {{ elif group.sent_amount == 500 }}
+        {{ if player.id_in_group == 1 }}
+            <p>
+                You chose to send participant B {{ group.sent_amount }}.
+                Participant B returned {{ group.sent_back_amount_500 }}.
+            </p>
+            <p>
+                You were initially endowed with {{ C.ENDOWMENT }}, chose to send {{ group.sent_amount }}, received {{ group.sent_back_amount_500 }}, thus you now have:
+                {{ C.ENDOWMENT }} - {{ group.sent_amount }} + {{ group.sent_back_amount_500 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ else }}
+            <p>
+                Participant A sent you {{ group.sent_amount }}.
+                The amount was tripled, so you received {{ tripled_amount }}.
+                You chose to return {{ group.sent_back_amount_500 }}.
+            </p>
+            <p>
+                You were initially endowed with 0, received {{ tripled_amount }}, chose to return {{ group.sent_back_amount_500 }}, thus you now have:
+                0 + {{ tripled_amount }} - {{ group.sent_back_amount_500 }} = <strong>{{ player.payoff }}</strong>
+            </p>
+        {{ endif }}
+    {{ endif }}
+
+    <p>{{ next_button }}</p>
+
+    {{ include_sibling 'instructions.html' }}
+
+{{ endblock }}
