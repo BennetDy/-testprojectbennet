@@ -52,9 +52,9 @@ class Player(BasePlayer):
     )
 
     reported_number = models.IntegerField(
-        min=1,
+        min=0,
         max=6,
-        label='Please report the number you obtained (1-6).'
+        label='Please report the number you obtained (0-6).'
     )
 
     altruism_payoff = models.CurrencyField(initial=0)
