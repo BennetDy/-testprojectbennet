@@ -178,7 +178,9 @@ class FinalResults(Page):
             truth_payoff=player.truth_payoff,
         )
 
-
+class Start(Page):
+    pass
+    
 page_sequence = [
     Start,
     Altruism,
