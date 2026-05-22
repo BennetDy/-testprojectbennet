@@ -180,6 +180,7 @@ class FinalResults(Page):
 
 
 page_sequence = [
+    Start,
     Altruism,
     TrustSend,
     TrustSendWaitPage,
