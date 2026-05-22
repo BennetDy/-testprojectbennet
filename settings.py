@@ -52,7 +52,7 @@ SESSION_CONFIGS = [
     name='OwnProject',
     display_name='Bennets Test Project',
     app_sequence=['ownproject'],
-    num_demo_participants=8,
+    num_demo_participants=6,
 )
 ]
 
