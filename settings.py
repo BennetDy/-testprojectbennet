@@ -50,7 +50,7 @@ SESSION_CONFIGS = [
     #),
     dict(
     name='OwnProject',
-    display_name='Bennet's Test Project',
+    display_name='Bennets Test Project',
     app_sequence=['ownproject'],
     num_demo_participants=8,
 )
