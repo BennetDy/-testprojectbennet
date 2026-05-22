@@ -1,58 +1,58 @@
 from os import environ
 
 
-SESSION_CONFIGS = [
-    dict(
-        name='guess_two_thirds',
-        display_name="Guess 2/3 of the Average",
-        app_sequence=['guess_two_thirds', 'payment_info'],
-        num_demo_participants=3,
-    ),
-    dict(
-        name='survey', app_sequence=['survey', 'payment_info'], num_demo_participants=1
-    ),
-    dict(
-        name='prisoner',
-        display_name="Prisoner's Dilemma",
-        app_sequence=['prisoner', 'payment_info'],
-        num_demo_participants=4,
-    ),
-    dict(
-        name='multiply_app',
-        display_name="Multiply App",
-        app_sequence=['multiply_app', 'payment_info'],
-        num_demo_participants=1,
-    ),
-    dict(
-        name='real_efforts_number',
-        display_name="Real Efforts Number",
-        app_sequence=['real_efforts_number', 'payment_info'],
-        num_demo_participants=1,
-    ),
-    dict(
-        name='prisoners_dilemma_simple',
-        display_name="Prisoners Dilemma Simple",
-        app_sequence=['prisoners_dilemma_simple', 'payment_info'],
-        num_demo_participants=2,
-    ),    
+SESSION_CONFIGS = #[
+    #dict(
+        #name='guess_two_thirds',
+       # display_name="Guess 2/3 of the Average",
+      #  app_sequence=['guess_two_thirds', 'payment_info'],
+     #   num_demo_participants=3,
+    #),
+    #dict(
+    #    name='survey', app_sequence=['survey', 'payment_info'], num_demo_participants=1
+    #),
+    #dict(
+        #name='prisoner',
+       # display_name="Prisoner's Dilemma",
+      #  app_sequence=['prisoner', 'payment_info'],
+     #   num_demo_participants=4,
+    #),
+    #dict(
+        #name='multiply_app',
+       # display_name="Multiply App",
+      #  app_sequence=['multiply_app', 'payment_info'],
+     #   num_demo_participants=1,
+    #),
+    #dict(
+        #name='real_efforts_number',
+       # display_name="Real Efforts Number",
+      #  app_sequence=['real_efforts_number', 'payment_info'],
+     #   num_demo_participants=1,
+    #),
+    #dict(
+        #name='prisoners_dilemma_simple',
+       # display_name="Prisoners Dilemma Simple",
+      #  app_sequence=['prisoners_dilemma_simple', 'payment_info'],
+     #   num_demo_participants=2,
+    #),    
 
-    dict(
-        name='trust',
-        display_name="Trust Game",
-        app_sequence=['trust', 'payment_info'],
-        num_demo_participants=2,
-    ),
-    dict(
-        name='altruism',
-        display_name="altruism",
-        app_sequence=['altruism', 'payment_info'],
-        num_demo_participants=1,
-    ),
+    #dict(
+        #name='trust',
+       # display_name="Trust Game",
+      #  app_sequence=['trust', 'payment_info'],
+     #   num_demo_participants=2,
+    #),
+    #dict(
+        #name='altruism',
+       # display_name="altruism",
+      #  app_sequence=['altruism', 'payment_info'],
+     #   num_demo_participants=1,
+    #),
     dict(
     name='OwnProject',
     display_name='Own Project',
     app_sequence=['ownproject'],
-    num_demo_participants=2,
+    num_demo_participants=6,
 )
 ]
 
